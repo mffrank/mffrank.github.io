@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href=https://www.embl.org/>EMBL</a> Heidelberg, Germany
+subtitle: Computatoinal Biologist in Heidelberg, Germany
 
 profile:
   align: right
