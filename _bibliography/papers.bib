@@ -6,7 +6,10 @@
   title={Modeling epigenetic heterogeneity across time and genome in single-cell multi-omics experiments},
   school={EMBL Heidelberg and University of Heidelberg},
   year={2024},
-  selected={true}
+  selected={true},
+  abstract={The genomic sequence of an organism is nearly identical in all its cells and over its lifetime. Epigenomic marks, however, such as DNA methylation and chromatin accessibility, are subject to drastic changes across different tissues and throughout organism development. Recent advancements, notably the development of multi-omics single-cell technologies, allow for simultaneous interrogation of DNA methylation, chromatin accessibility, and transcriptomes within individual cells. This offers unique opportunities to gain insight into mechanisms by which the epigenome shapes gene expression and influences cell fate. However, analyzing these datasets poses major challenges: Typically, smaller numbers of cells can be assayed per experiment than conventional single-cell RNAseq with lower coverage due to small amounts of input material. This means that classical statistical methods are underpowered to detect subtle changes in DNA methylation and chromatin accessibility. Furthermore, current tests can only detect differences between discrete and pre-defined cell populations, whereas single-cell approaches allow for studying continuous processes in organismal lineage development.  To address this, I propose computational methods for decomposing single-cell epigenetic heterogeneity across developmental time and genomic loci. This thesis introduces new concepts, leveraging pseudotemporal ordering of cells to conduct statistical inferences upon epigenetic changes. At the core of these developments is GPmeth, a Gaussian process framework designed to model highly sparse single-cell methylation and accessibility information by enforcing smooth variation across pseudotime and genomic coordinates and thus effectively sharing information between cells and genomic positions. Importantly, this model does not rely on averaging methylation signals across fixed genomic windows but can identify differentially methylated/accessible regions in a data-driven way. Testing GPmeth against other models without dynamic aggregation of methylation data revealed increased sensitivity to detect even subtle epigenetic changes.  Application of GPmeth to scNMT-seq data from mouse embryonic stem cells undergoing gastrulation revealed over 3000 enhancer elements that exhibited dynamic changes in chromatin accessibility or DNA methylation rates during germ layer formation.  The detailed spatiotemporal model allowed for a precise definition of differentially methylated regions, validated by transcription factor binding motif analysis. Furthermore, the clustering of temporal epigenetic patterns identified lineage-specific enhancers in an unsupervised manner.  I expect GPmeth to be a valuable tool for studying time-resolved epigenetic regulation in several emerging multimodal single-cell datasets.}
+  pdf={assets/pdf/Max_Frank_Thesis_small.pdf}
+
 }
 
 @article{bludau2021systematic,
@@ -18,7 +21,9 @@
   pages={3810},
   year={2021},
   publisher={Nature Publishing Group UK London},
-  selected={true}
+  selected={true},
+  abstract={To a large extent functional diversity in cells is achieved by the expansion of molecular complexity beyond that of the coding genome. Various processes create multiple distinct but related proteins per coding gene – so-called proteoforms – that expand the functional capacity of a cell. Evaluating proteoforms from classical bottom-up proteomics datasets, where peptides instead of intact proteoforms are measured, has remained difficult. Here we present COPF, a tool for COrrelation-based functional ProteoForm assessment in bottom-up proteomics data. It leverages the concept of peptide correlation analysis to systematically assign peptides to co-varying proteoform groups. We show applications of COPF to protein complex co-fractionation data as well as to more typical protein abundance vs. sample data matrices, demonstrating the systematic detection of assembly- and tissue-specific proteoform groups, respectively, in either dataset. We envision that the presented approach lays the foundation for a systematic assessment of proteoforms and their functional implications directly from bottom-up proteomic datasets.},
+  html={https://www.nature.com/articles/s41467-021-24030-x}
 }
 
 @article{meier2020diapasef,
@@ -44,7 +49,9 @@
   pages={133--155},
   year={2020},
   publisher={Cell Press},
-  selected={true}
+  selected={true},
+  abstract={Living systems integrate biochemical reactions that determine the functional state of each cell. Reactions are primarily mediated by proteins. In proteomic studies, these have been treated as independent entities, disregarding their higher-level organization into complexes that affects their activity and/or function and is thus of great interest for biological research. Here, we describe the implementation of an integrated technique to quantify cell-state-specific changes in the physical arrangement of protein complexes concurrently for thousands of proteins and hundreds of complexes. Applying this technique to a comparison of human cells in interphase and mitosis, we provide a systematic overview of mitotic proteome reorganization. The results recall key hallmarks of mitotic complex remodeling and suggest a model of nuclear pore complex disassembly, which we validate by orthogonal methods. To support the interpretation of quantitative SEC-SWATH-MS datasets, we extend the software CCprofiler and provide an interactive exploration tool, SECexplorer-cc.},
+  html={https://www.sciencedirect.com/science/article/pii/S2405471220300016}
 }
 
 @article{heusel2019complex,
@@ -54,7 +61,9 @@
   volume={15},
   number={1},
   pages={e8438},
-  year={2019}
+  year={2019},
+  abstract={Proteins are major effectors and regulators of biological processes that can elicit multiple functions depending on their interaction with other proteins. The organization of proteins into macromolecular complexes and their quantitative distribution across these complexes is, therefore, of great biological and clinical significance. In this paper, we describe an integrated experimental and computational technique to quantify hundreds of protein complexes in a single operation. The method consists of size exclusion chromatography (SEC) to fractionate native protein complexes, SWATH/DIA mass spectrometry to precisely quantify the proteins in each SEC fraction, and the computational framework CCprofiler to detect and quantify protein complexes by error‐controlled, complex‐centric analysis using prior information from generic protein interaction maps. Our analysis of the HEK293 cell line proteome delineates 462 complexes composed of 2,127 protein subunits. The technique identifies novel sub‐complexes and assembly intermediates of central regulatory complexes while assessing the quantitative subunit distribution across them. We make the toolset CCprofiler freely accessible and provide a web platform, SECexplorer, for custom exploration of the HEK293 proteome modularity.},
+  html={https://www.embopress.org/doi/full/10.15252/msb.20188438}
 }
 
 @article{liu2019multi,
@@ -66,13 +75,8 @@
   pages={314--322},
   year={2019},
   publisher={Nature Publishing Group US New York},
-}
-
-@article{ha2019mobi,
-  title={Mobi-DIK (Ion Mobility DIA Analysis Kit): Targeted analysis software for diaPASEF data improves proteome coverage},
-  author={Ha, Annie and Frank, Max and Meier, Florian and Brunner, Andreas-David and Kaspar-Schoenefeld, Stephanie and Koch, Scarlet and Lubeck, Markus and Raether, Oliver and Collins, Ben C and Aebersold, Ruedi and others},
-  year={2019},
-  publisher={AMER SOC BIOCHEMISTRY MOLECULAR BIOLOGY INC}
+  html={https://www.nature.com/articles/s41587-019-0037-y},
+  abstract={Reproducibility in research can be compromised by both biological and technical variation, but most of the focus is on removing the latter. Here we investigate the effects of biological variation in HeLa cell lines using a systems-wide approach. We determine the degree of molecular and phenotypic variability across 14 stock HeLa samples from 13 international laboratories. We cultured cells in uniform conditions and profiled genome-wide copy numbers, mRNAs, proteins and protein turnover rates in each cell line. We discovered substantial heterogeneity between HeLa variants, especially between lines of the CCL2 and Kyoto varieties, and observed progressive divergence within a specific cell line over 50 successive passages. Genomic variability has a complex, nonlinear effect on transcriptome, proteome and protein turnover profiles, and proteotype patterns explain the varying phenotypic response of different cell lines to Salmonella infection. These findings have implications for the interpretation and reproducibility of research results obtained from human cultured cells.}
 }
 
 @article{salovska2020isoform,
@@ -82,16 +86,9 @@
   volume={16},
   number={3},
   pages={e9170},
-  year={2020}
-}
-
-@article{meier2019parallel,
-  title={Parallel accumulation--serial fragmentation combined with data-independent acquisition (diaPASEF): Bottom-up proteomics with near optimal ion usage},
-  author={Meier, Florian and Brunner, Andreas-David and Frank, Max and Ha, Annie and Voytik, Eugenia and Kaspar-Schoenefeld, Stephanie and Lubeck, Markus and Raether, Oliver and Aebersold, Ruedi and Collins, Ben C and others},
-  journal={bioRxiv},
-  pages={656207},
-  year={2019},
-  publisher={Cold Spring Harbor Laboratory}
+  year={2020},
+  abstract={Profiling of biological relationships between different molecular layers dissects regulatory mechanisms that ultimately determine cellular function. To thoroughly assess the role of protein post‐translational turnover, we devised a strategy combining pulse stable isotope‐labeled amino acids in cells (pSILAC), data‐independent acquisition mass spectrometry (DIA‐MS), and a novel data analysis framework that resolves protein degradation rate on the level of mRNA alternative splicing isoforms and isoform groups. We demonstrated our approach by the genome‐wide correlation analysis between mRNA amounts and protein degradation across different strains of HeLa cells that harbor a high grade of gene dosage variation. The dataset revealed that specific biological processes, cellular organelles, spatial compartments of organelles, and individual protein isoforms of the same genes could have distinctive degradation rate. The protein degradation diversity thus dissects the corresponding buffering or concerting protein turnover control across cancer cell lines. The data further indicate that specific mRNA splicing events such as intron retention significantly impact the protein abundance levels. Our findings support the tight association between transcriptome variability and proteostasis and provide a methodological foundation for studying functional protein degradation.},
+  html={https://www.embopress.org/doi/full/10.15252/msb.20199170}
 }
 
 @article{bludau2020complex,
@@ -100,7 +97,9 @@
   journal={Nature protocols},
   pages={1--47},
   year={2020},
-  publisher={Nature Publishing Group UK London}
+  publisher={Nature Publishing Group UK London},
+  abstract={Most catalytic, structural and regulatory functions of the cell are carried out by functional modules, typically complexes containing or consisting of proteins. The composition and abundance of these complexes and the quantitative distribution of specific proteins across different modules are therefore of major significance in basic and translational biology. However, detection and quantification of protein complexes on a proteome-wide scale is technically challenging. We have recently extended the targeted proteomics rationale to the level of native protein complex analysis (complex-centric proteome profiling). The complex-centric workflow described herein consists of size exclusion chromatography (SEC) to fractionate native protein complexes, data-independent acquisition mass spectrometry to precisely quantify the proteins in each SEC fraction based on a set of proteotypic peptides and targeted, complex-centric analysis where prior information from generic protein interaction maps is used to detect and quantify protein complexes with high selectivity and statistical error control via the computational framework CCprofiler (https://github.com/CCprofiler/CCprofiler). Complex-centric proteome profiling captures most proteins in complex-assembled state and reveals their organization into hundreds of complexes and complex variants observable in a given cellular state. The protocol is applicable to cultured cells and can potentially also be adapted to primary tissue and does not require any genetic engineering of the respective sample sources. At present, it requires ~8 d of wet-laboratory work, 15 d of mass spectrometry measurement time and 7 d of computational analysis.},
+  html={https://www.nature.com/articles/s41596-020-0332-6}
 }
 
 @article{vonesch2020mcq,
@@ -109,5 +108,7 @@
   journal={medRxiv},
   pages={2020--12},
   year={2020},
-  publisher={Cold Spring Harbor Laboratory Press}
+  publisher={Cold Spring Harbor Laboratory Press},
+  abstract={McQ is a SARS-CoV-2 quantification assay that couples early-stage barcoding with high-throughput sequencing to enable multiplexed processing of thousands of samples. McQ is based on homemade enzymes to enable low-cost testing of large sample pools, circumventing supply chain shortages. Implementation of cost-efficient high-throughput methods for detection of RNA viruses such as SARS-CoV-2 is a potent strategy to curb ongoing and future pandemics. Here we describe Multiplexed SARS-CoV-2 Quantification platform (McQ), an in-expensive scalable framework for SARS-CoV-2 quantification in saliva samples. McQ is based on the parallel sequencing of barcoded amplicons generated from SARS- CoV-2 genomic RNA. McQ uses indexed, target-specific reverse transcription (RT) to generate barcoded cDNA for amplifying viral- and human-specific regions. The barcoding system enables early sample pooling to reduce hands-on time and makes the ap-proach scalable to thousands of samples per sequencing run. Robust and accurate quantification of viral load is achieved by measuring the abundance of Unique Molecular Identifiers (UMIs) introduced during reverse transcription. The use of homemade reverse transcriptase and polymerase enzymes and non-proprietary buffers reduces RNA to library reagent costs to 92 cents/sample and circumvents potential supply chain short-ages. We demonstrate the ability of McQ to robustly quantify various levels of viral RNA in 838 clinical samples and accu-rately diagnose positive and negative control samples in a test-ing workflow entailing self-sampling and automated RNA ex-traction from saliva. The implementation of McQ is modular, scalable and could be extended to other pathogenic targets in future.},
+  html={https://www.medrxiv.org/content/10.1101/2020.12.02.20242628v1}
 }
