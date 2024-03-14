@@ -2,9 +2,9 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Max Frank
     - name: Date of Birth
-      value: 14th March 1879
+      value: 16th February 1993
     - name: Languages
       value: English, German
 
@@ -12,8 +12,8 @@
   type: time_table
   contents:
     - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+      institution: [EMBL Heidelberg](https://www.embl.org/) and [University of Heidelberg](https://www.uni-heidelberg.de/en)
+      year: 2024
       description:
         - Description 1.
         - Description 2.
