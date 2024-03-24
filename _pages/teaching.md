@@ -6,7 +6,9 @@ description: classes and workshops
 nav: true
 nav_order: 6
 ---
+<img src="../assets/img/lachen.png" height="250" width="791">
 
+<!-- ![laughing](../assets/img/lachen.png "laughing") -->
 ## Graduate Teaching (EMBL Heidelberg)
 
 ---
@@ -18,7 +20,7 @@ nav_order: 6
 - Aimed at PhD students and post-docs in computational biology aiming to improve their skills in multi-omics data integration methodologies
 - Co-supervised practical course on the multi-omics analysis in python using tools such as [MOFA](https://biofam.github.io/MOFA2/index.html)
 
-#### EMBL Predoc Course
+#### [EMBL Predoc Course](https://www.embl.org/about/info/embl-international-phd-programme/overview/)
 
 2019-2021
 
