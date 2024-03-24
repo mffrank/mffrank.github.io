@@ -6,7 +6,14 @@ description: classes and workshops
 nav: true
 nav_order: 6
 ---
-<img src="../assets/img/lachen.png" height="250" width="791">
+<style>
+.responsive {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+</style>
+<img src="../assets/img/lachen.png" class="responsive">
 
 <!-- ![laughing](../assets/img/lachen.png "laughing") -->
 ## Graduate Teaching (EMBL Heidelberg)
